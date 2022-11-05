@@ -1,40 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 18:51:30 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/05 13:25:50 by dagoncal         ###   ########.fr       */
+/*   Created: 2022/11/05 13:30:11 by dagoncal          #+#    #+#             */
+/*   Updated: 2022/11/05 14:35:09 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+int	ft_atoi(const char *nptr)
 {
 	size_t	i;
-	size_t	i2;
+	int		sign;
+	int		n;
 
 	i = 0;
-	i2 = 0;
-	if (ft_strlen(little) == 0)
+	sign = 1;
+	n = 0;
+	while ((nptr[i] > 8 && nptr[i] < 14) || nptr[i] == 32)
+		i++;
+	if (nptr[i] == '+' || nptr[i] == '-')
 	{
-		return ((char *)big);
-	}
-	while (big[i] != '\0' && i < len)
-	{
-		i2 = 0;
-		while (big[i + i2] == little[i2] && big[i + i2] != '\0' && i + i2 < len)
-		{
-			if (little[i2 + 1] == '\0')
-			{
-				return ((char *)&big[i]);
-			}
-			i2++;
-		}
+		if (nptr[i] == '-')
+			sign = -1;
 		i++;
 	}
-	return (0);
+	while (ft_isdigit(nptr[i]))
+	{
+		n *= 10;
+		n += nptr[i] - 48;
+		i++;
+	}
+	n *= sign;
+	return (n);
 }

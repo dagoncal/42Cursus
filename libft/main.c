@@ -6,7 +6,7 @@
 /*   By: dagoncal <dagoncal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:19:10 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/04 18:50:15 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/11/05 14:34:48 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 
 int	main(void)
 {
-	char	dest[6] = "hello";
-	char	src[4] = "XYZ";
+	//char	dest[] = "Hello World";
+	//char	src[] = "World";
 
 	//printf("ft_isalpha('a') = %d\n", ft_isalpha('a'));
 	//printf("ft_isalpha('1') = %d\n", ft_isalpha('1'));
@@ -61,6 +61,15 @@ int	main(void)
 	//printf("ft_strncmp(src, dest) = %d\n", ft_strncmp(src, dest, 1*sizeof(char)));
 	//printf("ft_memchr(dest, 'l', 3) = %s\n", (char *)ft_memchr(dest, 'l', 3));
 	//printf("ft_memchr(dest, 'l', 2) = %s\n", (char *)ft_memchr(dest, 'l', 2));
-	printf("ft_memcmp(dest, src, 2*sizeof(char)) = %d\n", ft_memcmp(dest, src, 2*sizeof(char)));
+	//printf("ft_memcmp(dest, src, 2*sizeof(char)) = %d\n", ft_memcmp(dest, src, 2*sizeof(char)));
+	//printf("ft_strnstr(dest, src, 11*sizeof(char)) = %s\n", ft_strnstr(dest, src, 11*sizeof(char)));
+	//printf("ft_strnstr(dest, src, 8*sizeof(char)) = %s\n", ft_strnstr(dest, src, 8*sizeof(char)));
+	//printf("ft_atoi(      19874ab-dasd3012893) = %d\n", ft_atoi(" 	  19874ab-dasd3012893"));
+	//printf("ft_atoi(            +13123fklsj-2424) = %d\n", ft_atoi("	     +13123fklsj-2424"));
+	//printf("ft_atoi(            -23912390-asdnmasd213891) = %d\n", ft_atoi("	       -23912390-asdnmasd213891"));
+	//printf("ft_atoi(a         342542) = %d\n", ft_atoi("a	   	342542"));
+	//printf("ft_atoi(         a123123) = %d\n", ft_atoi("	  	a123123"));
+	//printf("ft_atoi(      -a123144-asdjd) = %d\n", ft_atoi("	    -a123144-asdjd"));
+	//printf("ft_atoi(     +a3289049023-sdadkjdjlk) = %d\n", ft_atoi("	    +a3289049023-sdadkjdjlk"));
 	return (0);
 }

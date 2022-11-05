@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRCS = $(wildcard ft_*.c)
 OBJS = ${SRCS:.c=.o}
-INCS = libft.h
+INCS = ./
 NAME = libft.a
 LIBC = ar rc
 LIBR = ranlib
