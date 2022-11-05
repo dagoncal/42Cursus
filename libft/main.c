@@ -6,7 +6,7 @@
 /*   By: dagoncal <dagoncal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:19:10 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/05 14:34:48 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/11/05 18:53:08 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@ int	main(void)
 {
 	//char	dest[] = "Hello World";
 	//char	src[] = "World";
+	//char	s1[] = "Hello";
+	//char	s2[] = " World";
+	//char	*str;
 
 	//printf("ft_isalpha('a') = %d\n", ft_isalpha('a'));
 	//printf("ft_isalpha('1') = %d\n", ft_isalpha('1'));
@@ -71,5 +74,12 @@ int	main(void)
 	//printf("ft_atoi(         a123123) = %d\n", ft_atoi("	  	a123123"));
 	//printf("ft_atoi(      -a123144-asdjd) = %d\n", ft_atoi("	    -a123144-asdjd"));
 	//printf("ft_atoi(     +a3289049023-sdadkjdjlk) = %d\n", ft_atoi("	    +a3289049023-sdadkjdjlk"));
+	//str = (char *)ft_calloc(5 + 1, sizeof(char));
+	//strcpy(str, src);
+	//printf("(char *)ft_calloc(5, sizeof(char)) = %s\n", str);
+	//free(str);
+	//printf("ft_strdup(src) = %s\n", ft_strdup(src));
+	//printf("ft_substr(dest) = %s\n", ft_substr(dest, 6, 5));
+	//printf("ft_strjoin(s1, s2) = %s\n", ft_strjoin(s1, s2));
 	return (0);
 }
