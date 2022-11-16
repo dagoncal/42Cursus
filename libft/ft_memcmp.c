@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 18:20:04 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/04 18:31:34 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/11/09 13:04:46 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	result;
 	unsigned char	*str1;
 	unsigned char	*str2;
 
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
-	if (n != 0)
+	while (n && *str1 == *str2)
 	{
-		result = ft_strncmp((char *)str1, (char *)str2, n);
-		return (result);
+		str1++;
+		str2++;
+		n--;
 	}
-	return (0);
+	if (n)
+		return (*str1 - *str2);
+	else
+		return (0);
 }
