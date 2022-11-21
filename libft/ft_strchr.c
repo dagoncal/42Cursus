@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:21:34 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/04 16:34:44 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:48:58 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	len = ft_strlen(s);
-	/* In case c == '\0' */
 	if (c == '\0' && s[len] == '\0')
 	{
 		return ((char *)&s[len]);
