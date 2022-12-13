@@ -6,12 +6,11 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 12:37:14 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/12/12 22:14:26 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:34:33 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	get_size(int nbr)
 {
@@ -38,7 +37,7 @@ static int	absolute(int nbr)
 char	*ft_itoa(int n)
 {
 	unsigned int	size;
-	char	*str;
+	char			*str;
 
 	size = get_size(n);
 	str = (char *)malloc((size + 1) * sizeof(char));

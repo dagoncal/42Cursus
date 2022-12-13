@@ -6,7 +6,7 @@
 /*   By: dagoncal <dagoncal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:19:10 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/21 15:53:42 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/11/22 16:38:13 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(void)
 	//char	s1[] = "Hello";
 	//char	s2[] = " World";
 	//char	*str;
-	char	cmp[] = "deHello Worlded";
+	//char	cmp[] = "deHello Worlded";
 
 	//printf("ft_isalpha('a') = %d\n", ft_isalpha('a'));
 	//printf("ft_isalpha('1') = %d\n", ft_isalpha('1'));
@@ -82,6 +82,6 @@ int	main(void)
 	//printf("ft_strdup(src) = %s\n", ft_strdup(src));
 	//printf("ft_substr(dest) = %s\n", ft_substr(dest, 6, 5));
 	//printf("ft_strjoin(s1, s2) = %s\n", ft_strjoin(s1, s2));
-	printf("ft_strtrim(cmp, de) = %s\n", ft_strtrim(cmp, "de"));
+	//printf("ft_strtrim(cmp, de) = %s\n", ft_strtrim(cmp, "de"));
 	return (0);
 }

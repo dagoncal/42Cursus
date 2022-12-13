@@ -6,7 +6,7 @@
 /*   By: dagoncal <dagoncal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:19:43 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/04 11:37:06 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:34:00 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int	ft_isalpha(int c)
 {
 	if (ft_isupper(c) || ft_islower(c))
 	{
-		/* 1024 is being returned just because isalpha() returns 1024 as well */
 		return (1024);
 	}
 	return (0);

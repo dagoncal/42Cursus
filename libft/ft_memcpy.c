@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:57:50 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/09 12:22:46 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:22:46 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr_src;
 	unsigned char	*ptr_dest;
 

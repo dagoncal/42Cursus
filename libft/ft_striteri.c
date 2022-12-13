@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 16:36:46 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/12/13 12:32:29 by dagoncal         ###   ########.fr       */
+/*   Created: 2022/12/13 11:28:03 by dagoncal          #+#    #+#             */
+/*   Updated: 2022/12/13 11:38:14 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strrchr(const char *s, int c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
-	size_t	len;
-	char	*result;
+	unsigned int	index;
 
-	i = 0;
-	len = ft_strlen(s);
-	result = 0;
-	if (c == '\0' && s[len] == '\0')
+	if (!s || !f)
+		return ;
+	index = 0;
+	while (s[index] != '\0')
 	{
-		return ((char *)&s[len]);
+		(*f)(index, &s[index]);
+		index++;
 	}
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
-		{
-			result = (char *)&s[i];
-		}
-		i++;
-	}
-	return (result);
 }

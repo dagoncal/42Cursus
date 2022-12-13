@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 18:06:01 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/17 14:12:27 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:38:08 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,14 @@
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
-	size_t	len;
 	char	*str;
 	size_t	i;
 	size_t	i2;
 
 	if (s1 && s2)
 	{
-		len = (ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char);
-		str = (char *)malloc(len);
+		str = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1)
+				* sizeof(char));
 		if (str)
 		{
 			i = 0;

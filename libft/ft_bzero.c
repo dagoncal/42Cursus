@@ -6,7 +6,7 @@
 /*   By: dagoncal <dagoncal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:49:17 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/04 11:41:25 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:21:32 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	/* Replace each n of s with 0 ('\0') */
 	ft_memset(s, '\0', n);
 }

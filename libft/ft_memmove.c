@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:42:03 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/11/09 12:24:12 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:31:34 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const char	*ptr_src;
 	char		*ptr_dest;
-	const char		*last_src;
+	const char	*last_src;
 	char		*last_dest;
 
 	if (!dest && !src)
