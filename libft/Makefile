@@ -21,7 +21,7 @@ $(NAME): ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
 	${LIBR} ${NAME}
 
-bonus: ${BONUS_OBJS}
+bonus: ${OBJS} ${BONUS_OBJS}
 	${LIBC} ${NAME} ${BONUS} ${BONUS_OBJS}
 	${LIBR} ${NAME}
 	
