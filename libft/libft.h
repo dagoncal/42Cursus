@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:28:22 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/12/15 22:03:51 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/20 16:52:30 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 typedef struct s_list
 {
