@@ -6,7 +6,7 @@
 /*   By: dagoncal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:36:46 by dagoncal          #+#    #+#             */
-/*   Updated: 2022/12/13 12:32:29 by dagoncal         ###   ########.fr       */
+/*   Updated: 2022/12/22 16:18:08 by dagoncal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	while (s[i] != '\0')
 	{
-		if (s[i] == c)
+		if (s[i] == (unsigned char)c)
 		{
 			result = (char *)&s[i];
 		}
